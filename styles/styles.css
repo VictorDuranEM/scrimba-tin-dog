@@ -1,0 +1,153 @@
+/* ============
+Reset
+============ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  display: block;
+  padding: 0;
+}
+
+
+/* ============
+Typography
+============ */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #B7B7B7;
+}
+
+h1 {
+  color: #F8F8F8;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.dog-status {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 5.25rem;
+}
+
+
+/* ============
+Layout
+============ */
+
+body {
+  height: 100vh;
+  background: linear-gradient(180deg, #FFFFFF 33.29%, #F7F8FC 100%);
+}
+
+.container {
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.dog {
+  position: relative;
+}
+
+.dog-img {
+  border-radius: 15px;
+}
+
+.dog-info {
+  position: absolute;
+  bottom: 1.3em;
+  left: 1.5em;
+}
+
+.dog-status {
+  position: absolute;
+  top: 55px;
+  left: 15px;
+  transform: rotate(-30deg);
+  border-radius: 15px;
+  line-height: 1.2;
+  padding: 0 .35em;
+}
+
+.dog-status-like {
+  background-image: linear-gradient(to right, #6EF2F2, #29D78A);
+  background-clip: text;
+  color: transparent;
+  border: 8px solid #6EF2F2;
+}
+
+.dog-status-nope {
+  background-image: linear-gradient(to right, #F83574, #F9655C);
+  background-clip: text;
+  color: transparent;
+  border: 8px solid #F83574;
+  top: 60;
+  font-size: 4.5rem;
+}
+
+.actions {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-nav {
+  width: 34px;
+}
+
+.btn-logo {
+  width: 84px;
+}
+
+.btn-action {
+  background: white;
+  border-radius: 50%;
+  margin: 0 15px;
+  width: 90px;
+  aspect-ratio: 1;
+  box-shadow: 0 10px 20px #E9E9EA;
+  padding: 15px;
+}
+
+.btn-nope:hover {
+  background: #FFE7EF;
+  box-shadow: 0 10px 20px #EDD9DF;
+}
+
+.btn-love:hover {
+  background: #DBFFF4;
+  box-shadow: 0 10px 20px #CCF1E6;
+}
